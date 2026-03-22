@@ -1,0 +1,21 @@
+// Original array of items
+let items = ['5','2','9','1','7','4','6','8'];
+
+// Chunked version (grouped arrays)
+let chunked = [
+  ['5','2','9'],
+  ['1','7','4'],
+  ['6','8']
+];
+
+// Flatten the chunked array and print as space-separated
+console.log("Flattened chunked array:", chunked.flat().join(' ')); 
+// Output: 5 2 9 1 7 4 6 8
+
+// Print the ungrouped items
+console.log("Ungrouped:", items.join(' ')); 
+// Output: Ungrouped: 5 2 9 1 7 4 6 8
+
+// Print the chunked array as concatenated groups
+console.log("Chunked:", chunked.map(group => group.join('')).join(' ')); 
+// Output: Chunked: 529 174 68
