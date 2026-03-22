@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Chunking Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <h1>🧠 Advanced Memory Chunking Lab</h1>
+
+  <select id="testType">
+    <option value="phone">Phone Number</option>
+    <option value="pin">ATM PIN</option>
+    <option value="cnic">CNIC</option>
+  </select>
+
+  <br>
+
+  <button onclick="startTest(false)">Ungrouped</button>
+  <button onclick="startTest(true)">Chunked</button>
+
+  <h2 id="timer">⏱ 5</h2>
+
+  <p id="display"></p>
+
+  <input type="text" id="userInput" placeholder="Type what you remember">
+
+  <button onclick="checkAnswer()">Submit</button>
+
+  <h3 id="result"></h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
